@@ -111,12 +111,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media (max-width: 770px) {
+@media (max-width: 1025px) {
   .container .calc_body {
     width: 80%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 450px) {
   .container .calc_body {
     width: 95%;
   }
@@ -241,4 +241,9 @@ body {
 .container .calc_body .calc_buttons .calc_operators button:active {
   background-color: #A70A39;
   outline: 2px solid #F50B50;
+}
+@media (max-height: 480px) {
+  .container .calc_body .calc_buttons .calc_operators button {
+    font-size: 25px;
+  }
 }

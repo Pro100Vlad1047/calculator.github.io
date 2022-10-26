@@ -120,17 +120,23 @@ function divide() {
 
 function equal() {
     let number = document.getElementById("output").innerHTML;
-    if (number.includes("+")) {
-        document.getElementById("output").innerHTML += "=" + plusChecker();
-    }
-    else if (number.includes("-")) {
-        document.getElementById("output").innerHTML += "=" + minusChecker();
-    }
-    else if (number.includes("*")) {
-        document.getElementById("output").innerHTML += "=" + multiplyChecker();
-    }
-    else if (number.includes("/")) {
-        document.getElementById("output").innerHTML += "=" + divideChecker();
+    if (number.includes("=")) {
+        let i = number.indexOf("=");
+        let change = number.substr(++i, 20);
+        document.getElementById("output").innerHTML = change;
+    } else {
+        if (number.includes("+")) {
+            document.getElementById("output").innerHTML += "=" + plusChecker();
+        }
+        else if (number.includes("-")) {
+            document.getElementById("output").innerHTML += "=" + minusChecker();
+        }
+        else if (number.includes("*")) {
+            document.getElementById("output").innerHTML += "=" + multiplyChecker();
+        }
+        else if (number.includes("/")) {
+            document.getElementById("output").innerHTML += "=" + divideChecker();
+        }
     }
 }
 function plusChecker() {
