@@ -1,52 +1,13 @@
-function readWrite_1() {
-    let number = document.getElementById("number_1").innerHTML;
-    document.getElementById("output").innerHTML += number;
+function readWrite(e) {
+    document.getElementById("output").innerHTML += e.innerHTML;
 }
-function readWrite_2() {
-    let number = document.getElementById("number_2").innerHTML;
-    document.getElementById("output").innerHTML += number;
-}
-function readWrite_3() {
-    let number = document.getElementById("number_3").innerHTML;
-    document.getElementById("output").innerHTML += number;
-}
-function readWrite_4() {
-    let number = document.getElementById("number_4").innerHTML;
-    document.getElementById("output").innerHTML += number;
-}
-function readWrite_5() {
-    let number = document.getElementById("number_5").innerHTML;
-    document.getElementById("output").innerHTML += number;
-}
-function readWrite_6() {
-    let number = document.getElementById("number_6").innerHTML;
-    document.getElementById("output").innerHTML += number;
-}
-function readWrite_7() {
-    let number = document.getElementById("number_7").innerHTML;
-    document.getElementById("output").innerHTML += number;
-}
-function readWrite_8() {
-    let number = document.getElementById("number_8").innerHTML;
+
+function readWrite_pi() {
+    let number = Math.PI;
+    number=number.toFixed(2);
     document.getElementById("output").innerHTML += number;
 }
 
-function readWrite_9() {
-    let number = document.getElementById("number_9").innerHTML;
-    document.getElementById("output").innerHTML += number;
-}
-function readWrite_0() {
-    let number = document.getElementById("number_0").innerHTML;
-    document.getElementById("output").innerHTML += number;
-}
-function readWrite_koma() {
-    let number = document.getElementById("number_koma").innerHTML;
-    document.getElementById("output").innerHTML += number;
-}
-function readWrite_pi() {
-    let number = Math.PI;
-    document.getElementById("output").innerHTML += number;
-}
 function clearAll() {
     document.getElementById("output").innerHTML = "";
 }
